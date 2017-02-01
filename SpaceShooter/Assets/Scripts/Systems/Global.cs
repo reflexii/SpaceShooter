@@ -41,6 +41,7 @@ public class Global : MonoBehaviour {
 
     private void Init()
     {
+        DontDestroyOnLoad(gameObject);
         if (_prefabs == null)
         {
             _prefabs = GetComponentInChildren<Prefabs>();

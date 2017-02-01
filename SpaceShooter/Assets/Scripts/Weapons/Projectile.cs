@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour {
     [SerializeField]
     private ProjectileType _projectileType;
 
-    private Rigidbody rb;
+    public Rigidbody rb { get; private set; }
 
     public ProjectileType Type { get { return _projectileType; } }
 
